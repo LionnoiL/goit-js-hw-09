@@ -67,22 +67,24 @@ const images = [
   },
 ];
 
+const backBtnEl = document.querySelector('.back-button');
 const galleryEl = document.querySelector('.gallery');
 
 const liTxt = images
   .map(img => {
     const { preview, original, description } = img;
     return `
+    <li class="gallery-item">
           <a class="gallery-link" href="${original}">
             <img
               class="gallery-image"
               src="${preview}"
-              data-source="${original}"
               alt="${description}"
               width=360
               height=200
             />
-          </a>`;
+          </a>
+    </li>`;
   })
   .join('');
 
@@ -93,4 +95,12 @@ const gallery = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionDelay: 250,
+});
+
+gallery.on('show.simplelightbox', function () {
+  backBtnEl.style.visibility = 'hidden';
+});
+
+gallery.on('close.simplelightbox', function () {
+  backBtnEl.style.visibility = 'visible';
 });

@@ -1,0 +1,33 @@
+.container {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  width: 95px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px;
+}
