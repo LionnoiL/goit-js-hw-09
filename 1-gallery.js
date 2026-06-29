@@ -9,5 +9,5 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                
               height=200
             />
           </a>
-    </li>`}).join("");s.insertAdjacentHTML("beforeend",l);const o=new n(".gallery a",{overlayOpacity:.8,captions:!0,captionsData:"alt",captionDelay:250});o.on("show.simplelightbox",function(){i.style.visibility="hidden"});o.on("close.simplelightbox",function(){i.style.visibility="visible"});
+    </li>`}).join("");s.insertAdjacentHTML("beforeend",l);const o=new n(".gallery a",{overlayOpacity:.8,captionsData:"alt",captionDelay:250});o.on("show.simplelightbox",function(){i.style.visibility="hidden"});o.on("close.simplelightbox",function(){i.style.visibility="visible"});
 //# sourceMappingURL=1-gallery.js.map
