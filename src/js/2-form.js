@@ -31,6 +31,11 @@ formEl.addEventListener('submit', e => {
     return;
   }
 
+  console.log(formData);
+
   formEl.reset();
   localStorage.removeItem(keyStorage);
+
+  formData.email = '';
+  formData.message = '';
 });
