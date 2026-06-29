@@ -92,7 +92,6 @@ galleryEl.insertAdjacentHTML('beforeend', liTxt);
 
 const gallery = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.8,
-  captions: true,
   captionsData: 'alt',
   captionDelay: 250,
 });
